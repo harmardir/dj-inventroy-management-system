@@ -1,5 +1,13 @@
 from django.contrib import admin
 
 from .models import Computer
+from .forms import ComputerForm
 
-admin.site.register(Computer)
+class ComputerAdmin(admin.ModelAdmin):
+    list_display = ["computer_name","ip_address","username","MAC_address"]
+    form = ComputerForm
+    list_filter = ['computer_name','ip_address']
+    search_fields = ['computer_name','ip_address','MAC_address']
+
+
+admin.site.register(Computer,ComputerAdmin)
