@@ -1,3 +1,12 @@
+{% extends "base.html" %} 
+
 <html>
-    {{title}}
+    {{ title }}
+
+    {% block content %}
+
+    <p class="lead">This is our home page</p>
+    <a class="btn btn-lg btn-primary" href="/docs/5.2/components/navbar/" role="button">Login &raquo;</a>
+    
+    {% endblock %}
 </html>

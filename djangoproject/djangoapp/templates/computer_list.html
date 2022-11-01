@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+<html>
+    {{ title }}
+
+    {% block content %}
+
+    <table>
+        <tr>
+            <th>#</th>
+            <th>PC NAME</th>
+            <th>MAC ADDRESS</th>
+            <th>IP ADDRESS</th>
+            <th>PC USER'S NAME</th>
+            <th>LOCATION</th>
+        </tr>
+
+        {% for instance in queryset %}
+
+        <tr>
+            <td>{{forloop.counter}}</td>
+            <td>{{instance.Computer_name}}</td>
+            <td>{{instance.MAC_address}}</td>
+            <td>{{instance.ip_address}}</td>
+            <td>{{instance.username}}</td>
+            <td>{{instance.location}}</td>
+        </tr>
+
+        {% endfor %}
+        
+    </table>
+
+    {% endblock %}
+</html>
