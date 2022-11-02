@@ -4,7 +4,7 @@ from .models import Computer
 from .forms import ComputerForm
 
 class ComputerAdmin(admin.ModelAdmin):
-    list_display = ["computer_name","ip_address","username","MAC_address"]
+    list_display = ["computer_name","ip_address","username","MAC_address","purchase_date","timestamp"]
     form = ComputerForm
     list_filter = ['computer_name','ip_address']
     search_fields = ['computer_name','ip_address','MAC_address']

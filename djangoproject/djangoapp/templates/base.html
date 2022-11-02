@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.104.2">
-    <title>Fixed top navbar example · Bootstrap v5.2</title>
+    <title>CIMS</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbar-fixed/">
 
@@ -84,6 +84,10 @@
     <!-- Custom styles for this template -->
     <link href="{% static 'css/stylesheet.css' %}" rel="stylesheet">
     <link href="{% static 'css/navbar-top-fixed.css' %}" rel="stylesheet">
+
+<link href="{% static 'js/jquery-ui-1.13.2.custom/jquery-ui.min.css' %}" rel="stylesheet">
+<link href="{% static 'js/jquery-ui-1.13.2.custom/jquery-ui.structure.min.css' %}" rel="stylesheet">
+<link href="{% static 'js/jquery-ui-1.13.2.custom/jquery-ui.theme.min.css' %}" rel="stylesheet">
   </head>
   <body>
     
@@ -96,7 +100,7 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href='/'>Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="computer_list">Computer List</a>
@@ -125,7 +129,12 @@
 
 
     <script src="{% static 'js/bootstrap.bundle.min.js' %}" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="{% static 'js/jquery-3.6.1.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="{% static 'js/jquery-ui-1.13.2.custom/jquery-ui.js' %}"></script>
+  
 
       
   </body>
 </html>
+
