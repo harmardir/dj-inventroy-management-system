@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 <html>
-    {{ title }}
+
+
+
+    <h1 class="title">
+
+        {{ title }}
+
+    </h1>
+
 
     {% block content %}
 
@@ -18,7 +26,7 @@
 
         <tr>
             <td>{{forloop.counter}}</td>
-            <td>{{instance.Computer_name}}</td>
+            <td>{{instance.computer_name}}</td>
             <td>{{instance.MAC_address}}</td>
             <td>{{instance.ip_address}}</td>
             <td>{{instance.username}}</td>
